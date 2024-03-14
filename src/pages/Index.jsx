@@ -46,7 +46,7 @@ const Index = () => {
             </Select>
             <Button
               mr={2}
-              isDisabled={selectedSchool === schools[0]}
+              isDisabled={!selectedSchool || selectedSchool === schools[0]}
               onClick={() => {
                 const currentIndex = schools.indexOf(selectedSchool);
                 setSelectedSchool(schools[currentIndex - 1]);
@@ -114,7 +114,7 @@ const Index = () => {
                 </Select>
                 <Button
                   mr={2}
-                  isDisabled={selectedSKU === skus[0]}
+                  isDisabled={!selectedSKU || selectedSKU === skus[0]}
                   onClick={() => {
                     const currentIndex = skus.indexOf(selectedSKU);
                     setSelectedSKU(skus[currentIndex - 1]);
