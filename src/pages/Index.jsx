@@ -34,6 +34,9 @@ const Index = () => {
 
         <Box flex={1} p={4}>
           <Box display="flex" alignItems="center" mb={4}>
+            <Text fontWeight="bold" mr={4}>
+              School
+            </Text>
             <Select placeholder="Select school" value={selectedSchool} onChange={(e) => setSelectedSchool(e.target.value)} mr={4}>
               {schools.map((school) => (
                 <option key={school} value={school}>
@@ -96,6 +99,9 @@ const Index = () => {
               </Table>
 
               <Box display="flex" alignItems="center" mt={4}>
+                <Text fontWeight="bold" mr={4}>
+                  SKUs
+                </Text>
                 <Select placeholder="Select SKUs" value={selectedSKU} onChange={(e) => setSelectedSKU(e.target.value)} mr={4}>
                   {skus.map((sku) => (
                     <option key={sku} value={sku}>
