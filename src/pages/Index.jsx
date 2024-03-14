@@ -41,10 +41,25 @@ const Index = () => {
                 </option>
               ))}
             </Select>
-            <Button mr={2} isDisabled={selectedSchool === schools[0]}>
+            <Button
+              mr={2}
+              isDisabled={selectedSchool === schools[0]}
+              onClick={() => {
+                const currentIndex = schools.indexOf(selectedSchool);
+                setSelectedSchool(schools[currentIndex - 1]);
+              }}
+            >
               Previous
             </Button>
-            <Button isDisabled={selectedSchool === schools[schools.length - 1]}>Next</Button>
+            <Button
+              isDisabled={selectedSchool === schools[schools.length - 1]}
+              onClick={() => {
+                const currentIndex = schools.indexOf(selectedSchool);
+                setSelectedSchool(schools[currentIndex + 1]);
+              }}
+            >
+              Next
+            </Button>
           </Box>
 
           {selectedSchool ? (
@@ -88,10 +103,25 @@ const Index = () => {
                     </option>
                   ))}
                 </Select>
-                <Button mr={2} isDisabled={selectedSKU === skus[0]}>
+                <Button
+                  mr={2}
+                  isDisabled={selectedSKU === skus[0]}
+                  onClick={() => {
+                    const currentIndex = skus.indexOf(selectedSKU);
+                    setSelectedSKU(skus[currentIndex - 1]);
+                  }}
+                >
                   Previous
                 </Button>
-                <Button isDisabled={selectedSKU === skus[skus.length - 1]}>Next</Button>
+                <Button
+                  isDisabled={selectedSKU === skus[skus.length - 1]}
+                  onClick={() => {
+                    const currentIndex = skus.indexOf(selectedSKU);
+                    setSelectedSKU(skus[currentIndex + 1]);
+                  }}
+                >
+                  Next
+                </Button>
               </Box>
             </>
           ) : (
