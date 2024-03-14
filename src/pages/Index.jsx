@@ -75,6 +75,9 @@ const Index = () => {
               </Text>
               <Text>Rice (2024-04-28 to 2024-05-02)</Text>
 
+              <Text fontWeight="bold" mt={8}>
+                SKU Type Exceptions
+              </Text>
               <Table mt={4}>
                 <Thead>
                   <Tr>
