@@ -12,11 +12,13 @@ const Index = () => {
   return (
     <Box>
       {}
+      {}
       <Heading borderWidth={1} p={4}>
         Report: Delivery Run Details
       </Heading>
 
       <Box display="flex">
+        {}
         {}
         <Box w="33%" h="50vh" borderWidth={1} p={4} position="sticky" top={0} left={0}>
           <Text fontWeight="bold">Dashboard</Text>
@@ -33,6 +35,7 @@ const Index = () => {
         </Box>
 
         <Box flex={1} p={4}>
+          {}
           {}
           <Box display="flex" alignItems="center" mb={4}>
             <Text fontWeight="bold" mr={4}>
@@ -71,15 +74,18 @@ const Index = () => {
           {selectedSchool ? (
             <>
               {}
+              {}
               <Text fontWeight="bold">Exception Period Menu</Text>
               <Text>Bread (2024-05-02 to 2024-05-04)</Text>
 
+              {}
               {}
               <Text fontWeight="bold" mt={4}>
                 Actual Menu
               </Text>
               <Text>Rice (2024-04-28 to 2024-05-02)</Text>
 
+              {}
               {}
               <Text fontWeight="bold" mt={8}>
                 SKU Type Exceptions
@@ -107,6 +113,7 @@ const Index = () => {
                 </Tbody>
               </Table>
 
+              {}
               {}
               <Box display="flex" alignItems="center" mt={4}>
                 <Text fontWeight="bold" mr={4}>
